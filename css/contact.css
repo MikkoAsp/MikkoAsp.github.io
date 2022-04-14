@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Topside decoration ->*/
+.top{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(210, 210, 210);
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+}
+.topText{
+    margin-right: 40%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    font-size: larger;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+/*Picture decoration ->*/
+.logo{
+    height: auto;
+    max-width: 100%;
+    width: 100px;
+    border-radius: 50%;
+}
+.myPic{
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/*Upper part of the screen->. Information boxes*/
+.infoMain{
+    width: 100%;
+    padding-top: 30px;
+    height: 300px;
+    background-color: rgb(184, 184, 184);
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.infoMain h2 {
+    background-color: rgba(100, 100, 100, 0.7);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.infoMain h3{
+    margin-top: 3px;
+}
+.infoMain h4{
+    margin-top: 3px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 2px;
+    padding: 2px;
+    width: 608px;
+}
+.info1{
+    width: 33%;
+    float: left;
+    margin-left: 10px;
+}
+.info2{
+    width: 33%;
+    float: left;
+}
+.info2 a{
+    color: rgb(139, 0, 0);
+    font-size: large;
+}
+.info3{
+    width: 33%;
+    float: left;
+}
+
+/*Lower part of the screen->. Form and picture*/
+.formMain{
+    background-color: rgb(49, 84, 104);
+    margin-top: 10px;
+}
+.pictureDiv{
+    float: left;
+    margin-left: 20%;
+    margin-top: -20px;
+}
+.formDiv{
+    background-color: aliceblue;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 30px;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 5px;
+}
+/*Decoration for the forms elements->*/
+#firstName{
+    margin-right: 20px;
+}
+#email{
+    width: 300px;
+    margin-right: 20px;
+}
+#business{
+    width: 300px;
+}
+#emailLabel{
+    margin-right: 161px;
+}
+#businessLabel{
+    margin-right: 225px;
+}
+#business{
+    margin-right: 20px;
+}
+
+/*Smaller screen only->*/
+@media only screen and (max-width: 750px) and (min-width: 400px){
+    .topText{
+        margin-right: 0;
+        }
+    .logo{
+        width: 50px;
+        }
+    .top h1{
+        font-size: 15px;
+    }
+    .top h3{
+        font-size: 10px;
+    }
+    nav ul li{
+        font-size: medium;
+        margin: 5px 10px;
+    }
+
+}
+@media only screen and (max-width: 950px) and (min-width: 751px){
+    nav{
+        width: 100%;
+    }
+    .topText{
+        margin-right: 10%;
+    }
+    .logo{
+        width: 75px;
+        margin-left: 50px;
+    }
+    .top h1{
+            font-size: 20px;
+    }
+    .top h3{
+            font-size: 15px;
+    }
+
+    nav ul li{
+        font-size: medium;
+        margin: 10px 25px;
+    }
+}

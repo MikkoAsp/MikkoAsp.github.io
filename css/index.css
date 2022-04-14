@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Topside decoration ->*/
+.top{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(210, 210, 210);
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+}
+.topText{
+    margin-right: 40%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    font-size: larger;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    color: red;
+}
+/*Leftside decoration ->*/
+.left{
+    float: left;
+    width: 30%;
+    height: 80%;
+    margin-top: 150px;
+    margin-left: 175px;
+}
+.left h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.left h2{
+    color: white;
+    line-height: 35px;
+    font-family: cursive;
+}
+.left h3{
+    font-family: cursive;
+    color: white;
+    text-align: left;
+    margin-top: 5px;
+}
+.left h3 a{
+    text-decoration: none;
+    color: orange;
+    size: 20px;
+}
+.left a:hover{
+    color: black;
+}
+.cvLink{
+    background: #212121;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    float: left;
+    border-radius: 5px;
+}
+.left h1 span{
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgba(14, 23, 77, 0.651), rgb(27, 27, 27));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left h3 span{
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger ;
+}
+
+/*Right side decoration ->*/
+.right{
+    color: black;
+    background-color: rgba(228, 228, 228, 0.30);
+    border-radius: 20px;
+    float: right;
+    width: 60%;
+    height: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 15px;
+}
+.right h1{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.right h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right p{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+    font-size: larger;
+}
+.right a{
+    text-decoration: none;
+    color:  rgb(204, 39, 39);
+}
+.right a:hover{
+    color: black;
+}
+
+/*Picture decoration ->*/
+.selfie{
+    width: 200px;
+    border-radius: 20%;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 400px){
+    .topText{
+        margin-right: 0;
+        }
+    .logo{
+        width: 50px;
+        }
+    .top h1{
+        font-size: 15px;
+    }
+    .top h3{
+        font-size: 10px;
+    }
+    .left{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+    }
+    nav ul li{
+        font-size: medium;
+        margin: 5px 10px;
+    }
+    .right{
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 950px) and (min-width: 751px){
+    nav{
+        width: 100%;
+    }
+    .topText{
+        margin-right: 10%;
+        }
+    .logo{
+        width: 75px;
+        margin-left: 50px;
+        }
+        .top h1{
+            font-size: 20px;
+        }
+        .top h3{
+            font-size: 15px;
+        }
+    .left{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+    }
+    nav ul li{
+        font-size: medium;
+        margin: 10px 25px;
+    }
+    .right{
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Topside decoration ->*/
+.top{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(210, 210, 210);
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+}
+.topText{
+    margin-right: 40%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    font-size: larger;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    color: red;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*Work1 decoration->*/
+.work1{
+    width: 100%;
+    margin-top: 10px;
+}
+.left1{
+    width: 30%;
+    height: 454px;
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin-left: 7px;
+    background-image: linear-gradient(to right, rgb(13, 0, 201) , rgb(39, 47, 58));
+}
+.left1 p{
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+}
+.left1 h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+.right1{
+    background-image: linear-gradient(to right, rgb(39, 47, 58) , rgb(86, 83, 122));
+    width: 69%;
+    float: left;
+    border: 1px solid black;
+    padding-bottom: 30px;
+}
+.video1{
+    width: 50%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+/*work2 decoration->*/
+.work2{
+    width: 100%;
+    height:1010px;
+    background-color: rgb(170, 215, 255);
+}
+.left2{
+    margin-top: 10px;
+    width: 30%;
+    height:536px;
+    float: left;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    margin-left: 7px;
+    background-image: linear-gradient(to right, rgb(26, 65, 100) , rgb(86, 83, 122));
+}
+.left2 h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+.left2 p{
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.right2{
+    margin-top: 10px;
+    background-color: antiquewhite;
+    width: 69%;
+    float: left;
+    border: 1px solid black;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to left, rgb(26, 65, 100) , rgb(86, 83, 122));
+}
+.img2{
+    margin-left: 20px;
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    float: left;
+}
+.img3{
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    float: left;
+}
+@media only screen and (min-width: 1921px){
+
+    .img3{
+        width: 775px;
+    }
+    .work2{
+        height: 1075px;
+    }
+    .left2{
+        height: 593px;
+    }
+    .left1 p{
+        font-size: 26px;
+    }
+    .left2 p{
+        font-size: 26px;
+    }
+    .video1{
+        width: 55%;
+    }
+}
+
+/*Smaller screen specific->*/
+@media only screen and (max-width: 750px) and (min-width: 400px){
+    .topText{
+        margin-right: 0;
+        }
+    .logo{
+        width: 50px;
+        }
+    .top h1{
+        font-size: 15px;
+    }
+    .top h3{
+        font-size: 10px;
+    }
+    nav ul li{
+        font-size: medium;
+        margin: 5px 10px;
+    }
+
+}
+@media only screen and (max-width: 950px) and (min-width: 751px){
+    nav{
+        width: 100%;
+    }
+    .topText{
+        margin-right: 10%;
+    }
+    .logo{
+        width: 75px;
+        margin-left: 50px;
+    }
+    .top h1{
+            font-size: 20px;
+    }
+    .top h3{
+            font-size: 15px;
+    }
+
+    nav ul li{
+        font-size: medium;
+        margin: 10px 25px;
+    }
+}

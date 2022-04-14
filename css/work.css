@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Topside decoration ->*/
+.top{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(210, 210, 210);
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+}
+.topText{
+    margin-right: 40%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    font-size: larger;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    color: red;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+    width: 100px;
+    border-radius: 50%;
+}
+/*Video divs decoration->*/
+.videoDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(139, 139, 139);
+}
+.videoLeft{
+    width: 75%;
+    float: left;
+    height: 600px;
+}
+.video1{
+    width: 80%;
+    height: 90%;
+    border: 50px;
+    border: 3px solid black;
+    background-color: #000;
+    border-radius: 5px;
+    margin-left: 9%;
+    margin-top: 1%;
+
+}
+.videoRight{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 5%;
+    background-color: rgb(214, 214, 214);
+    width: 20%;
+    float: right;
+}
+.videoRight h1{
+    margin-top: 15px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+.videoRight p {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 23px;
+}
+.videoRight h4{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.videoRight a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.videoRight a:hover{
+    color: #000;
+    background-color: grey;
+}
+/*Info Divs decoration->*/
+.infoDiv{
+    border-top: 1px solid black;
+    width: 100%;
+    height: 1000px;
+    background-color:rgb(207, 207, 207);
+}
+.infoLeft{
+    float: left;
+    width: 50%;
+    height: 600px;
+}
+.infoLeft h1{
+    background-color: white;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.infoLeft p {
+    margin-top: 7px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid black;
+}
+.infoRight{
+    float: right;
+    width: 48%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 98px;
+    margin-right: 1%;
+    border: 1px solid black;
+}
+.infoRight h2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.infoRight p {
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.projectPic{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    float: left;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 400px){
+    .topText{
+        margin-right: 0;
+        }
+    .logo{
+        width: 50px;
+        }
+    .top h1{
+        font-size: 15px;
+    }
+    .top h3{
+        font-size: 10px;
+    }
+    nav ul li{
+        font-size: medium;
+        margin: 5px 10px;
+    }
+
+}
+@media only screen and (max-width: 950px) and (min-width: 751px){
+    nav{
+        width: 100%;
+    }
+    .topText{
+        margin-right: 10%;
+    }
+    .logo{
+        width: 75px;
+        margin-left: 50px;
+    }
+    .top h1{
+            font-size: 20px;
+    }
+    .top h3{
+            font-size: 15px;
+    }
+
+    nav ul li{
+        font-size: medium;
+        margin: 10px 25px;
+    }
+}
